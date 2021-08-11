@@ -42,6 +42,9 @@ function App() {
     getStudents()
   }, [])
 
+  // take this method out of this functional componnet, as it has nothing to component lifecycle then inside the useEffect set your State
+  // getStudents().then( (studentArray) => setData(studentArray) )
+  
   const getStudents = async () => {
 
     try {
